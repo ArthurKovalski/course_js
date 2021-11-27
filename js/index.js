@@ -1,5 +1,5 @@
-
 // Lesson number ONE
+// ________________________
 
 
 
@@ -32,22 +32,75 @@
 
 
 
-// lesson NUMBER TWO
+// // lesson NUMBER TWO
+// ___________________________
 
-document.querySelector('.input__in');// input
+// document.querySelector('.input__in');// input
 
-let inputIn = document.querySelector('.input__in');
+// let inputIn = document.querySelector('.input__in');
 
-let button = document.querySelector('button');//button
+// let button = document.querySelector('button');//button
 
-let div = document.querySelector('.out');
+// let div = document.querySelector('.out');
 
-button.onclick = function () {
-//when will push button
-console.log('Hey, everything is good!');
-// console.log(inputIn.value); //value is what inside input
-let b = +inputIn.value;//+ turns into a number!!!!!!
-console.log(b + 10);//'55' + 10 = 5510
-div.innerHTML = b;
-inputIn.value = ''; // clean input after action
+// button.onclick = function () {
+// //when will push button
+// console.log('Hey, everything is good!');
+// // console.log(inputIn.value); //value is what inside input
+// let b = +inputIn.value;//+ turns into a number!!!!!!
+// console.log(b + 10);//'55' + 10 = 5510
+// div.innerHTML = b;
+// inputIn.value = ''; // clean input after action
+// }
+
+
+//Lesson NUMBER THREE
+// _____________________
+
+// let a = 6;
+
+// if(a == 9){
+//     console.log('Yes')
+// }else{
+//     console.log('No')
+// }
+
+const button = document.querySelector('button');
+const input = document.querySelector('.age');
+
+
+// () => array functions
+button.onclick = () => {
+    let num = +input.value;
+    if (num >= 16 && num < 60) {
+        console.log('welcome');
+    }else if(num > 60){
+        console.log('Are you sure?')
+    }
+     else {
+        console.log('stop!');
+    }
+
+    switch (num) {
+        case 14:
+            console.log('You are too young!');
+            break;
+            case 23:
+                console.log('You are good!');
+                break;
+                case 45:
+                    console.log('You need to rush!');
+                    break;
+                    case 57:
+                        console.log('let\'go');
+                        break;
+                        default:
+                            console.log('Ok')
+    }
+
 }
+
+
+let b = 8;
+
+console.log(b < 7 || b > 9)
