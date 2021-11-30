@@ -70,37 +70,37 @@ const input = document.querySelector('.age');
 
 
 // () => array functions
-button.onclick = () => {
-    let num = +input.value;
-    if (num >= 16 && num < 60) {
-        console.log('welcome');
-    }else if(num > 60){
-        console.log('Are you sure?')
-    }
-     else {
-        console.log('stop!');
-    }
+// button.onclick = () => {
+//     let num = +input.value;
+//     if (num >= 16 && num < 60) {
+//         console.log('welcome');
+//     }else if(num > 60){
+//         console.log('Are you sure?')
+//     }
+//      else {
+//         console.log('stop!');
+//     }
 
-    switch (num) {
-        case 14:
-            console.log('You are too young!');
-            break;
-            case 23:
-                console.log('You are good!');
-                break;
-                case 45:
-                    console.log('You need to rush!');
-                    break;
-                    case 57:
-                        console.log('let\'go');
-                        break;
-                        default:
-                            console.log('Ok')
-    }
+//     switch (num) {
+//         case 14:
+//             console.log('You are too young!');
+//             break;
+//             case 23:
+//                 console.log('You are good!');
+//                 break;
+//                 case 45:
+//                     console.log('You need to rush!');
+//                     break;
+//                     case 57:
+//                         console.log('let\'go');
+//                         break;
+//                         default:
+//                             console.log('Ok')
+//     }
 
-}
+// }
 
 
-let b = 8;
+// let b = 8;
 
-console.log(b < 7 || b > 9)
+// console.log(b < 7 || b > 9)
