@@ -65,8 +65,8 @@
 //     console.log('No')
 // }
 
-const button = document.querySelector('button');
-const input = document.querySelector('.age');
+// const button = document.querySelector('button');
+// const input = document.querySelector('.age');
 
 
 // () => array functions
