@@ -121,7 +121,7 @@
 // console.log(admin === user === a);
 
 
-
+// copy object
 let user = {
     name:'Artur',
 car:false,
@@ -129,7 +129,7 @@ age:43,
 wife: true,
 }
 
-let clone = {};
+let clone = {};          
 
 for(let key in user){
     clone[key] = user[key]
@@ -137,3 +137,72 @@ for(let key in user){
 
 clone.name = 'Artur is web-developer'
 console.log(clone)
+//copy object
+
+// method assign
+
+let cat = {
+    eyes: 'Blue',
+    wool_color:' black',
+    character: 'Angry',
+}
+
+let dog = {
+    eyes: 'broun',
+    color: 'ginger',
+    age: 3,
+}
+
+let animals = {
+
+}
+
+console.log(Object.assign(animals, cat , dog));
+
+console.log(animals);
+
+
+// ------------------------------------------------------
+
+
+let women = {
+arms: 2,
+tits: true,
+legs:2,
+brain:{
+fuck: 'brain',
+fuck:'chocha',
+fuck: 'ass'
+}
+}
+
+let clone2 = Object.assign({}, women);
+
+console.log( women.brain == clone2.brain)
+
+// ------------------------------------------------------------------
+
+let a3 = {
+    number:533,
+    str:'Hello man',
+    bool: true,
+}
+
+
+a3.husban = 'man'
+
+console.log(a3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
