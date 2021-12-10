@@ -25,18 +25,18 @@
 // Objects
 //  _____________________________________
 
-let user = {
-    name:'Jone',
-    age: 30,
-    car: 'Toyota',
-    'like birds':true,
-    beer: 'Corona',
-    vodka: 'Stolichnaya'
-}
+// let user = {
+//     name:'Jone',
+//     age: 30,
+//     car: 'Toyota',
+//     'like birds':true,
+//     beer: 'Corona',
+//     vodka: 'Stolichnaya'
+// }
 
-user.name = 'Vasya'
-delete user.name
-console.log(user)
+// user.name = 'Vasya'
+// delete user.name
+// console.log(user)
 
 // // let key = 'like birds';
 // // console.log(user[key])
@@ -70,18 +70,70 @@ console.log(user)
 // }
 
 
-let salaries = {
-    Jonh: 100,
-    Vasya: 200,
-    Kolya: 50,
-    Sanek: 50,
-}
+// let salaries = {
+//     Jonh: 100,
+//     Vasya: 200,
+//     Kolya: 50,
+//     Sanek: 50,
+// }
 
-// let sum = salaries.Jonh + salaries.Vasya + salaries.Kolya + salaries.Sanek;
+// // let sum = salaries.Jonh + salaries.Vasya + salaries.Kolya + salaries.Sanek;
+// // console.log(sum)
+
+// let sum = 0;
+// for(let key in salaries){
+//     sum += salaries[key]
+// }
 // console.log(sum)
 
-let sum = 0;
-for(let key in salaries){
-    sum += salaries[key]
+
+
+// let menu = {
+//     width: 600,
+//     height: 400,
+//     amount: 40,
+//     title: 'property',
+// }
+
+// for(let key in menu){
+// if(typeof key == 'number'){
+//     key * 2;
+// }
+// }
+//     console.log(menu)
+    
+
+// let user = {
+//     name: 'Vasya',
+
+// }
+    
+// let admin = user;
+
+// admin.name = 'Petr'
+
+// let a = {
+//     name: 'Petr'
+// }
+
+
+// console.log(user)
+// console.log(admin === user === a);
+
+
+
+let user = {
+    name:'Artur',
+car:false,
+age:43,
+wife: true,
 }
-console.log(sum)
+
+let clone = {};
+
+for(let key in user){
+    clone[key] = user[key]
+}
+
+clone.name = 'Artur is web-developer'
+console.log(clone)
