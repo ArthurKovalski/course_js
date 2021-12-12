@@ -91,38 +91,38 @@
 //                 case 45:
 //                     console.log('You need to rush!');
 //                     break;
-//                     case 57:
-//                         console.log('let\'go');
-//                         break;
-//                         default:
-//                             console.log('Ok')
-//     }
+// //                     case 57:
+// //                         console.log('let\'go');
+// //                         break;
+// //                         default:
+// //                             console.log('Ok')
+// //     }
 
+// // }
+
+
+// // let b = 8;
+
+// // console.log(b < 7 || b > 9)
+
+
+// document.querySelector('.button__one').onclick = () =>{
+// console.log(document.querySelector('#one').value);
+// //style
 // }
 
+// document.querySelector('#one').oninput = () =>{
+//     console.log(document.querySelector('#one').value);
+//     document.querySelector('span').innerHTML = document.querySelector('#one').value
+// }
 
-// let b = 8;
-
-// console.log(b < 7 || b > 9)
-
-
-document.querySelector('.button__one').onclick = () =>{
-console.log(document.querySelector('#one').value);
-//style
-}
-
-document.querySelector('#one').oninput = () =>{
-    console.log(document.querySelector('#one').value);
-    document.querySelector('span').innerHTML = document.querySelector('#one').value
-}
-
-document.querySelector('.button__two').onclick = () =>{
-    console.log(document.querySelector('#i2').value);
-    let myCheckBox = document.querySelector('#i2');
-    console.log(myCheckBox.checked)
-    if(myCheckBox.checked){
-console.log('It was pushed')
-    }else{
-console.log('It was\'nt pushed')
-    }
-}
+// document.querySelector('.button__two').onclick = () =>{
+//     console.log(document.querySelector('#i2').value);
+//     let myCheckBox = document.querySelector('#i2');
+//     console.log(myCheckBox.checked)
+//     if(myCheckBox.checked){
+// console.log('It was pushed')
+//     }else{
+// console.log('It was\'nt pushed')
+//     }
+// }
