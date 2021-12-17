@@ -12,32 +12,43 @@
 
 // }
 
-document.querySelector('.btn1').onclick = () => {
-console.log(document.querySelector('#i2') .value);
-let myCheckBox = document.querySelector('#i2');
+// document.querySelector('.btn1').onclick = () => {
+// console.log(document.querySelector('#i2') .value);
+// let myCheckBox = document.querySelector('#i2');
 
-console.log(myCheckBox.checked);
-     if(myCheckBox.checked){
-console.log('push')
-     }else{
-console.log('Not push')
-     }
+// console.log(myCheckBox.checked);
+//      if(myCheckBox.checked){
+// console.log('push')
+//      }else{
+// console.log('Not push')
+//      }
+// }
+
+// document.querySelector('.btn2').onclick = (event) => {
+//     event.preventDefault()
+// // let text = document.querySelector('#two');
+// // console.log(text.value);
+// // text.value = 'one'
+// let form = document.querySelector('form');
+// console.log(form);
+// console.log(form.elements.two.value);
+// console.log(form.elements.three.value);
+
+// }
+
+
+// Loops
+let div = document.querySelectorAll('.one')
+
+console.log(div)
+// div.style.background = 'red'
+
+for(let i = 0; i < div.length; i++){
+     console.log(i)
+     
+     
+
 }
-
-document.querySelector('.btn2').onclick = (event) => {
-    event.preventDefault()
-// let text = document.querySelector('#two');
-// console.log(text.value);
-// text.value = 'one'
-let form = document.querySelector('form');
-console.log(form);
-console.log(form.elements.two.value);
-console.log(form.elements.three.value);
-
-}
-
-
-
 
 
 
