@@ -47,12 +47,21 @@ for(let i = 0; i < div.length; i++){
      console.log(div[i]);
      div[i].style.background = 'red';
      
-
+div[i].onclick = two;
 }
 
-fu
+function two () {
+     console.log('work?')
+}
 
+let b = document.getElementsByClassName('one');
+let c = document.getElementsByTagName('div');
+console.log(b);
+console.log(c);
 
+for(i = 0; i < b.length; i++){
+     b[i].style.border = '3px solid black'
+}
 
 
 
