@@ -1,3 +1,6 @@
+
+// Object
+//______________________________________________________
 const student = {
     name:'Valera',
     email:'valer@gmail.com',
@@ -10,14 +13,31 @@ const student = {
 }
 const keys = Object.keys(student);
 const values = Object.values(student);
-console.log(student['dumb key']);
-console.log(student.score);
-console.log(student['1'])
+// console.log(student['dumb key']);
+// console.log(student.score);
+// console.log(student['1']);
 
-// const array = [1,'string',{student},['1',2]];
-// const value = array[1];
-// console.log(value);
+const superKey = 'My key';
+
+student[superKey] = 'key'
+
+
 const functionA = (a) => a;
 student[functionA(12)] = 12
 student.newKey = 'newValue';
-console.log(student)
+// console.log(student);
+// ____________________________________________________
+// ARRAY
+
+
+const array = [1,'string',{student},['1',2]];
+// const value = array[1];
+for(let i = 0; i < array.length; i++){
+console.log(array[i])
+}
+array.push(' to end of array', 57890-2);// add an element to end of array;
+array.pop() //delete last element of array;
+array.shift(); //delet first element of array;
+array.unshift('add to start of array');// add element to start of array
+console.log(array)
+// console.log(value);
