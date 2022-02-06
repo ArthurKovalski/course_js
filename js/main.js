@@ -30,14 +30,21 @@ student.newKey = 'newValue';
 // ARRAY
 
 
-const array = [1,'string',{student},['1',2]];
+const array = [1,2,3,4,8,6, {}];
 // const value = array[1];
 for(let i = 0; i < array.length; i++){
-console.log(array[i])
+// console.log(array[i])
 }
-array.push(' to end of array', 57890-2);// add an element to end of array;
-array.pop() //delete last element of array;
-array.shift(); //delet first element of array;
-array.unshift('add to start of array');// add element to start of array
-console.log(array)
+// array.push(' to end of array', 57890-2);// add an element to end of array;
+// array.pop() //delete last element of array;
+// array.shift(); //delet first element of array;
+// array.unshift('add to start of array');// add element to start of array;
+// array.forEach((value, index, array) => {
+//     console.log(value, index, array);
+// })
+// console.log(array)
 // console.log(value);
+let array2 = array.map((value, index, array) => {
+    return value + index
+})
+console.log(array,array2)
