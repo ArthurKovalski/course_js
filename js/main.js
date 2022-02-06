@@ -47,4 +47,27 @@ for(let i = 0; i < array.length; i++){
 let array2 = array.map((value, index, array) => {
     return value + index
 })
-console.log(array,array2)
+console.log(array,array2);
+
+const temp = [2,3,4,5,6,7,8,9,9];
+
+let tF = temp.map(item => {
+    console.log(item);
+    return item * 10;
+})
+console.log(tF);
+
+let a = [43, 54, 64, 62, 86, 34];
+a[10] = 90;
+let b = a.map((item, index, array) => {
+    return index
+});
+
+console.log(b);
+
+const arrayForeinObject = [
+{'name':'Petya',' order':12,'sum':'123.5'}
+{'name':'Sergey',   ' order':12,'sum':'123,5'}
+{'name':'Devid  ',' order':12,'sum':'123. 5'}
+{'name':'Gregor',' order':12,'sum':'123, 50'}
+]
