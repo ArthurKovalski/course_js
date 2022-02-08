@@ -65,9 +65,34 @@ let b = a.map((item, index, array) => {
 
 console.log(b);
 
-const arrayForeinObject = [
-{'name':'Petya',' order':12,'sum':'123.5'}
-{'name':'Sergey',   ' order':12,'sum':'123,5'}
-{'name':'Devid  ',' order':12,'sum':'123. 5'}
-{'name':'Gregor',' order':12,'sum':'123, 50'}
+const z = [
+{'name':'Petya',' order':12,'sum':'123.5'},
+{ 'name':'Sergey',   ' order':12,'sum':'123,5'},
+{'name':'Devid  ',' order':12,'sum':'123. 5'},
+{'name':'Gregor',' order':12,'sum':'123, 50   '},
 ]
+
+const zBack = z.map(item => {
+    item.name = item.name.trim().toLocaleLowerCase();
+    item.sum = item.sum.trim();
+    return item
+})
+
+console.log(zBack);
+
+let arrSum = [3,4,5,6,7,2,4,6,4];
+let arrSum2 = [5,3,2,4,5,42,2,4,2];
+
+let arrSum3 = arrSum.map((item,index) =>{
+    return item + arrSum2[index]
+});
+
+arrSum3 = arrSum2.find((item, index) =>{
+    return item > 2
+})
+
+arrSum3 = arrSum2.filter((item, index) =>{
+    return item > 3;
+})
+
+console.log(arrSum3)
