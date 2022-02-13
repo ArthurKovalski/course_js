@@ -5,23 +5,37 @@
     box-sizing: border-box;
 }
 .container{
+    position: relative;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.container__style{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 200px;
+.container__styles{
+    width: 100%;
     height: 600px;
     background-color: aquamarine;
 }
-
-
-
 .block{
-    width: 400px;
-    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
     background-color: yellowgreen;
+    margin-right: 10px;
+    background-color:transparent;
+    visibility: hidden;
+    transition: background-color 2s ease-in;
+
+}
+.wide__block{
+    background-color: goldenrod;
+    visibility: visible;
+    position: relative;
+    z-index: 100;
+    
 }
 
 .button{
@@ -34,12 +48,5 @@
     background-color: aqua;
 }
 
-.add{
-    background-color: black;
-};
-
-.new{
-    background-color: blue;
-}
 
 
